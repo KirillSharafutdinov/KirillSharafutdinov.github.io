@@ -95,16 +95,11 @@ h3 {
     margin: 1.5rem 0 1rem;
     color: var(--primary);
     position: relative;
-    padding-left: 15px;
+    padding-left: 0; /* Убрано левое расстояние */
 }
 
-h3::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    top: -1px;
-    color: var(--accent-line);
-}
+/* УДАЛЕНО: точка перед заголовками h3 */
+/* УДАЛЕНО: h3::before */
 
 nav ul {
     display: flex;
@@ -239,10 +234,7 @@ nav a:hover::after {
     padding-left: 0;
 }
 
-.doc-card h3::before {
-    display: none;
-}
-
+/* УДАЛЕНО: точка в карточках */
 .doc-card p {
     color: var(--text-secondary);
     margin-top: 1rem;
@@ -258,24 +250,17 @@ nav a:hover::after {
 ul {
     padding-left: 1.8rem;
     margin: 1.2rem 0;
+    list-style-type: none; /* Убраны стандартные маркеры */
 }
 
 ul li {
     margin-bottom: 0.8rem;
     position: relative;
-    padding-left: 15px;
+    padding-left: 0; /* Убрано левое расстояние */
 }
 
-ul li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 10px;
-    width: 6px;
-    height: 6px;
-    background: var(--primary);
-    border-radius: 50%;
-}
+/* УДАЛЕНО: точки в списках */
+/* УДАЛЕНО: ul li::before */
 
 .update-date {
     font-style: italic;
@@ -393,7 +378,7 @@ footer nav a:hover::after {
     }
 }
 
-/* Анимации и микровзаимодействия */
+/* Анимации */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
