@@ -95,7 +95,14 @@ h3 {
     margin: 1.5rem 0 1rem;
     color: var(--primary);
     position: relative;
-    padding-left: 0; /* Убрано левое расстояние */
+    padding-left: 0;
+}
+
+p {
+    margin-bottom: 0.4rem;
+    position: relative;
+    padding-left: 0.5rem;
+    line-height: 1.2;
 }
 
 nav ul {
@@ -250,10 +257,10 @@ ul {
 }
 
 ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
     position: relative;
     padding-left: 1.5rem;
-    line-height: 1.8;
+    line-height: 1.2;
 }
 
 ul li::before {
