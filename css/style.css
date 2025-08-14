@@ -559,6 +559,10 @@ footer nav a:hover::after {
     }
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
