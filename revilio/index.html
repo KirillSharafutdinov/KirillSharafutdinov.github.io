@@ -12,7 +12,7 @@
             <h1>Revilio</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About the application</a></li>
+                    <li><a href="#capabilities">Application capabilities</a></li>
                     <li><a href="/revilio/privacy-policy.html">Privacy Policy</a></li>
                     <li><a href="/revilio/terms-of-use.html">Terms of Use</a></li>
                     <li><a href="/revilio/disclaimer.html">Disclaimer</a></li>
@@ -44,6 +44,68 @@
                 <li>Speech Framework and Voice Recognition: Using SFSpeechRecognizer technology to convert speech to text, providing convenient voice input and interaction with the app, as well as support for hands-free commands.</li>
                 <li>Siri Integration: Implementing shortcuts using the AppIntents framework to quickly call app functions via Siri voice commands, as well as customizing and creating custom commands using the Shortcuts app for increased personalization and usability.</li>
             </ul>
+        </section>
+        
+        <h2>Revilio Capabilities</h2>
+
+        <section id="capabilities" class="card">
+        <h3>1. Object search</h3>
+            <ul>
+                <li>Press the function call button and say the object you are looking for out loud (from the list of supported objects).</li>
+                <br>
+                <li>The application will recognize speech, match it with the name of a specific object and start searching for this object in the camera image in real time.</li>
+                <br>
+                <li>When an object is detected, it will give tactile (vibration) and sound (synthesized speech) signals indicating the location of the object in the frame relative to the center of the camera. You can change the type of signals in the application settings menu.</li>
+                <br>
+                <li>You can change the object selection method in the application settings by specifying a list instead of voice input. In this case, when you call the function, the application will display a menu with a list of all supported objects. The menu allows you to filter the list by entering part of the name of the desired object using the keyboard. Select the desired object from the list and the application will immediately begin searching for it.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>2. Text search</h3>
+            <ul>
+                <li>Press the function call button and say the word or phrase you are looking for out loud.</li>
+                <br>
+                <li>The application converts speech into text and starts searching for it among all the text in the camera's field of view.</li>
+                <br>
+                <li>When text is detected, it will give tactile (vibration) and sound (synthesized speech) signals indicating the location of the searched text in the frame relative to the center of the camera. You can change the type of signals in the application settings menu.</li>
+                <br>
+                <li>You can change the method of entering the searched text in the application settings, specifying the keyboard instead of voice input. In this case, when calling this function, the application will display a menu with an input field and a keyboard. The menu also contains a list with the search history of the last ten words or phrases. Select one of the items from this list, and its text will appear in the input field, or enter the desired text using the keyboard. Click the &quot;Find&quot; button on the keyboard or in the upper left corner of the menu, and the application will start searching for text from the input field. Click the &quot;Clear history&quot; button above the list with the search history or in the application settings to permanently delete the entire history of searched texts.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3>3. Reading text</h3>
+            <ul>
+                <li>Point the camera at the text and press the function call button.</li>
+                <br>
+                <li>The application will recognize the text in the camera frame and start reading it out loud with synthesized speech.</li>
+                <br>
+                <li>Playback control: Use the &quot;FORWARD&quot; and &quot;BACK&quot; buttons on the main screen to go forward and back through the recognized text, the transition step - a sentence or a line, can be selected in the application settings. Use the &quot;PAUSE&quot;/&quot;RESUME&quot; button to pause and continue reading. Use the &quot;READING SPEED&quot; button to select the speech speed of the synthesizer - normal or accelerated.</li>
+                <br>
+                <li>Segmentation function: Automatically determines the main text block in the center of the frame (for example, the desired page of a book in a spread), ignoring neighboring ones, to focus on the relevant content. The function can be disabled in the application settings.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3>Additional application features</h3>
+            <ul>
+                <li>Complete autonomy: all image, video, audio (speech recognition) and data processing occurs exclusively on your device. Data is not saved to disk (except for the local history of Text Search and application settings) and is not transmitted to the network.</li>
+                <br>
+                <li>Select a sound source: quiet or loud mode. In order to direct the application sounds to the earphone or headset connected to the device, select the &quot;Quiet&quot; mode.</li>
+                <br>
+                <li>Pause and resume: During any of the three main functions, press the &quot;Pause&quot; button to pause the operation. Press the button again to immediately resume the function. To save the device's battery and protect against overheating, it is recommended to pause or stop the Object Search and Text Search functions whenever they are not currently in use.</li>
+                <br>
+                <li>Intuitive control via voice commands and haptic feedback.</li>
+                <br>
+                <li>Control the camera zoom using the buttons on the main screen of the application for better recognition of objects or text.</li>
+                <br>
+                <li>Use the flashlight (flash) during the main functions to get better results in low light conditions, you can activate this feature in the application settings menu - separately for each of the three main functions.</li>
+                <br>
+                <li>Use built-in Apple technologies (Core ML, Vision Framework, Speech, AVFoundation) to provide fast, private and accessible help in everyday tasks.</li>
+            </ul>
+            <br>
+            <p>For more information, use the &quot;Learn&quot; menu by clicking the corresponding button located in the upper right corner of the main screen of the application. You can enable or disable this button in the application settings.</p>
         </section>
         
         <section class="doc-links">
