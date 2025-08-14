@@ -439,7 +439,127 @@ footer nav a:hover::after {
     }
 }
 
-/* Анимации */
+/* Styles for mobile menu */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 101;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background: var(--primary);
+    transition: all 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: var(--primary);
+    transition: all 0.3s;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+.menu-toggle.active .hamburger {
+    background: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.menu-toggle.active .hamburger::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* Adaptive styles */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+        padding-bottom: 0;
+    }
+    
+    h1::after {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--dark-bg);
+        padding: 5rem 2rem 2rem;
+        transition: left 0.3s ease;
+        z-index: 100;
+        overflow-y: auto;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+    }
+    
+    .menu.active {
+        left: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 1rem 0;
+    }
+    
+    /* Overlay for open window */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.7);
+        z-index: 99;
+    }
+    
+    .overlay.active {
+        display: block;
+    }
+}
+
+/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
