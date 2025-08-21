@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Revilio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="header-row">
+            <h1><a href="index.html">Revilio</a></h1>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Revilio Home Page</a></li>
+                <li><a href="/revilio/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="/revilio/terms-of-use.html">Terms of Use</a></li>
+                <li><a href="/revilio/disclaimer.html">Disclaimer</a></li>
+                <li><a href="/revilio/support.html">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    
+    <main class="container">
+        <h2>Revilio Support</h2>
+    <p>If you have any questions, problems or feedback, please contact us directly at Email:</p>
+    <p><a href="mailto:revilio.ios@gmail.com">revilio.ios@gmail.com</a></p>
+    <p>We will be happy to help you!</p>
+      
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Revilio. GNU Affero General Public License v3.0 (AGPL-3.0).</p>
+            <nav>
+                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="terms-of-use.html">Terms of Use</a> |
+                <a href="disclaimer.html">Disclaimer</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.menu');
+            const overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            document.body.appendChild(overlay);
+            
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                menu.classList.toggle('active');
+                overlay.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            });
+            
+            overlay.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                menu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    </script>
+</body>
+</html>
