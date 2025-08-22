@@ -131,6 +131,19 @@
         display: none;
     }
 
+        header nav ul {
+            padding-left: 0 !important;
+        }
+        
+        header nav ul li {
+            padding-left: 0 !important;
+            margin-left: 1.5rem;
+        }
+        
+        header nav ul li::before {
+            display: none !important;
+        }
+
     nav a {
         color: var(--text);
         text-decoration: none;
