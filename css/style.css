@@ -105,6 +105,10 @@
         line-height: 1.2;
     }
 
+        p a {
+            color: #66ccff;
+        }
+
     nav ul {
         display: flex;
         list-style: none;
