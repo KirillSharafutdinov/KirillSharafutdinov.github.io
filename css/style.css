@@ -112,6 +112,7 @@
     nav ul {
         display: flex;
         list-style: none;
+        padding-left: 0.5rem;
     }
 
     header nav ul {
@@ -122,7 +123,12 @@
     nav li {
         margin-left: 1.5rem;
         position: relative;
-        white-space: nowrap; /* Запрещаем перенос текста */
+        white-space: nowrap;
+        padding-left: 0.5rem;
+    }
+
+    nav li::before {
+        display: none;
     }
 
     nav a {
